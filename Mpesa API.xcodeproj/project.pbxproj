@@ -14,8 +14,6 @@
 		20E81DC62849045300691886 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E81DC52849045300691886 /* ContentView.swift */; };
 		20E81DC82849045D00691886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E81DC72849045D00691886 /* Assets.xcassets */; };
 		20E81DCB2849045D00691886 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E81DCA2849045D00691886 /* Preview Assets.xcassets */; };
-		20E81DD22849048A00691886 /* Paramenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E81DD12849048A00691886 /* Paramenters.swift */; };
-		20E81DD428490A3B00691886 /* SimulateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E81DD328490A3B00691886 /* SimulateService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +25,6 @@
 		20E81DC52849045300691886 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		20E81DC72849045D00691886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20E81DCA2849045D00691886 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		20E81DD12849048A00691886 /* Paramenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paramenters.swift; sourceTree = "<group>"; };
-		20E81DD328490A3B00691886 /* SimulateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulateService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +38,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2005ABB628493F0200797623 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2005ABB4284934F400797623 /* Token.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2005ABB728493F0D00797623 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2005ABB0284931F000797623 /* AccessToken.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2005ABB828493F2700797623 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20E81DC52849045300691886 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2005ABB928493F4000797623 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				2005ABB22849341000797623 /* Constants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 		20E81DB72849045200691886 = {
 			isa = PBXGroup;
 			children = (
@@ -61,15 +89,13 @@
 		20E81DC22849045300691886 /* Mpesa API */ = {
 			isa = PBXGroup;
 			children = (
+				2005ABB928493F4000797623 /* Constant */,
+				2005ABB828493F2700797623 /* View */,
+				2005ABB728493F0D00797623 /* Service */,
+				2005ABB628493F0200797623 /* Model */,
 				20E81DC32849045300691886 /* Mpesa_APIApp.swift */,
-				20E81DC52849045300691886 /* ContentView.swift */,
 				20E81DC72849045D00691886 /* Assets.xcassets */,
 				20E81DC92849045D00691886 /* Preview Content */,
-				20E81DD12849048A00691886 /* Paramenters.swift */,
-				20E81DD328490A3B00691886 /* SimulateService.swift */,
-				2005ABB0284931F000797623 /* AccessToken.swift */,
-				2005ABB22849341000797623 /* Constants.swift */,
-				2005ABB4284934F400797623 /* Token.swift */,
 			);
 			path = "Mpesa API";
 			sourceTree = "<group>";
@@ -154,9 +180,7 @@
 			files = (
 				20E81DC62849045300691886 /* ContentView.swift in Sources */,
 				2005ABB5284934F400797623 /* Token.swift in Sources */,
-				20E81DD428490A3B00691886 /* SimulateService.swift in Sources */,
 				20E81DC42849045300691886 /* Mpesa_APIApp.swift in Sources */,
-				20E81DD22849048A00691886 /* Paramenters.swift in Sources */,
 				2005ABB1284931F000797623 /* AccessToken.swift in Sources */,
 				2005ABB32849341000797623 /* Constants.swift in Sources */,
 			);
