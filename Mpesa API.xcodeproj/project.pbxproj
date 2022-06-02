@@ -10,6 +10,7 @@
 		2005ABB1284931F000797623 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2005ABB0284931F000797623 /* AccessToken.swift */; };
 		2005ABB32849341000797623 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2005ABB22849341000797623 /* Constants.swift */; };
 		2005ABB5284934F400797623 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2005ABB4284934F400797623 /* Token.swift */; };
+		2005ABBB2849433B00797623 /* Paramenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2005ABBA2849433B00797623 /* Paramenter.swift */; };
 		20E81DC42849045300691886 /* Mpesa_APIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E81DC32849045300691886 /* Mpesa_APIApp.swift */; };
 		20E81DC62849045300691886 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E81DC52849045300691886 /* ContentView.swift */; };
 		20E81DC82849045D00691886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E81DC72849045D00691886 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		2005ABB0284931F000797623 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
 		2005ABB22849341000797623 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2005ABB4284934F400797623 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		2005ABBA2849433B00797623 /* Paramenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paramenter.swift; sourceTree = "<group>"; };
 		20E81DC02849045300691886 /* Mpesa API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mpesa API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E81DC32849045300691886 /* Mpesa_APIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mpesa_APIApp.swift; sourceTree = "<group>"; };
 		20E81DC52849045300691886 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 			isa = PBXGroup;
 			children = (
 				2005ABB4284934F400797623 /* Token.swift */,
+				2005ABBA2849433B00797623 /* Paramenter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				2005ABB5284934F400797623 /* Token.swift in Sources */,
 				20E81DC42849045300691886 /* Mpesa_APIApp.swift in Sources */,
 				2005ABB1284931F000797623 /* AccessToken.swift in Sources */,
+				2005ABBB2849433B00797623 /* Paramenter.swift in Sources */,
 				2005ABB32849341000797623 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
