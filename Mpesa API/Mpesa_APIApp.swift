@@ -11,7 +11,7 @@ import SwiftUI
 struct Mpesa_APIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(paramenter: Parameters())
         }
     }
 }

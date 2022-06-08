@@ -23,7 +23,7 @@ import Foundation
 
 class Parameters: Codable, ObservableObject, Identifiable {
     enum CodingKeys: CodingKey {
-        case ShortCode
+        case BusinessShortCode
         case Password
         case Timestamp
         case TransactionType
@@ -35,9 +35,10 @@ class Parameters: Codable, ObservableObject, Identifiable {
         case AccountReference
         case TransactionDesc
     }
+ 
 
-    @Published var ShortCode: Int = 174379
-    @Published var Password = "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjIwNjAyMTc0MjQ0"
+    @Published var BusinessShortCode: Int = 174379
+    @Published var Password = ""
     @Published var Timestamp = ""
     @Published var TransactionType = "CustomerPayBillOnline"
     @Published var Amount: Int = 1
@@ -54,7 +55,7 @@ class Parameters: Codable, ObservableObject, Identifiable {
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
     
-        ShortCode = try container.decode(Int.self, forKey: .ShortCode)
+        BusinessShortCode = try container.decode(Int.self, forKey: .BusinessShortCode)
         Password = try container.decode(String.self, forKey: .Password)
         Timestamp = try container.decode(String.self, forKey: .Timestamp)
         TransactionType = try container.decode(String.self, forKey: .TransactionType)
@@ -70,7 +71,7 @@ class Parameters: Codable, ObservableObject, Identifiable {
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         
-        try container.encode(ShortCode, forKey: .ShortCode)
+        try container.encode(BusinessShortCode, forKey: .BusinessShortCode)
         try container.encode(Password, forKey: .Password)
         try container.encode(Timestamp, forKey: .Timestamp)
         try container.encode(Amount, forKey: .Amount)
@@ -82,4 +83,19 @@ class Parameters: Codable, ObservableObject, Identifiable {
         try container.encode(AccountReference, forKey: .AccountReference)
         try container.encode(TransactionDesc, forKey: .TransactionDesc)
     }
+}
+
+struct Response: Codable {
+    let MerchantRequestID: String
+    let CheckoutRequestID: String
+    let ResponseCode: String
+    let ResponseDescription: String
+    let CustomerMessage: String
+}
+
+struct res: Codable {
+let requestId: String
+let errorCode: String
+let errorMessage: String
+    
 }
